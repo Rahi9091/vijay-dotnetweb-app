@@ -11,4 +11,6 @@ WORKDIR /vijayapp
  
 RUN dotnet build -o vijaybin
  
-CMD ./vijaybin/ashu-webapp  --urls=http://0.0.0.0:5000
+RUN dotnet publish -o vijay_publish -p:AssemblyName=vijaydotnet
+ 
+CMD ./vijay_publish/vijaydotnet  --urls=http://0.0.0.0:5000
