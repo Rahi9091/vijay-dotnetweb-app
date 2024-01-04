@@ -5,7 +5,7 @@ services: # apps containers you want to build and run
     build: .  # path of dockerfile location -- . means current
     container_name: vijayc1 # it will create container also
     ports:
-    - 9091:5001  # you guys can use port between 1024 to 60000
+    - 9091:5000  # you guys can use port between 1024 to 60000
   vijayapp2: # creating httpd image and container 1
     image: vijayhttpd:version1
     build:
